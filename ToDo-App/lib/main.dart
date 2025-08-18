@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todoapp/widgets.dart/ToDoApp.dart';
+import 'widgets/todo_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,6 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: ToDoApp());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: ToDoApp());
   }
 }
